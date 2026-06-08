@@ -7,7 +7,7 @@ export default function PostCard({ post, currentUser }) {
   const token = localStorage.getItem('token');
 
   const handleLike = async () => {
-    const res = await fetch(`http://localhost:5000/api/posts/${post._id}/like`, {
+    const res = await fetch(`https://mini-social-app-3y9t.onrender.com/api/posts/${post._id}/like`, {
       method: 'PUT',
       headers: { 'Authorization': `Bearer ${token}` }
     });

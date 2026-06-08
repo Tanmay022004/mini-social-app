@@ -10,7 +10,7 @@ export default function Feed({ user }) {
   useEffect(() => {
     let isMounted = true;
 
-    fetch(`http://localhost:5000/api/posts?page=${page}&limit=10`)
+    fetch(`https://mini-social-app-3y9t.onrender.com/api/posts?page=${page}&limit=10`)
       .then(res => res.json())
       .then(data => {
         if (!isMounted) return;

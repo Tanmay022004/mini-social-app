@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const API_URL = 'http://localhost:5000/api/posts';
+const API_URL = 'https://mini-social-app-3y9t.onrender.com/api/posts';
 
 export default function CreatePost({ onPostCreated }) {
   const [text, setText] = useState('');
